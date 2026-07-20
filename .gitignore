@@ -1,0 +1,89 @@
+# Node / JavaScript / TypeScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnp.*
+.pnp.js
+
+# build outputs
+dist/
+build/
+out/
+lib/
+public/build/
+*.tgz
+
+# bundlers / caches
+.cache/
+.cache-loader/
+.parcel-cache/
+.vite/
+.esbuild/
+.next/
+.nuxt/
+.svelte-kit/
+.astro/
+.rush/temp/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing / coverage
+coverage/
+.nyc_output/
+jest.config.ts
+jest.config.js
+/jest-cache/
+.vitest/
+playwright-report/
+
+# Logs
+logs/
+*.log
+
+# Environment / secrets
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.credentials
+*.pem
+*.key
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# OS files (macOS / Windows)
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Misc
+*.swp
+*.swo
+*.lock
+.Dockerfile.swp
+*.iml
+
+# Optional: local npm / pnpm caches
+.npm/
+.pnpm-store/
+
+.github
+# End of file
