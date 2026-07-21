@@ -1,0 +1,17 @@
+{
+  "NI": [
+    "news1",
+    "news3"
+  ],
+  "Scotland": [
+    "news2",
+    "news3"
+  ],
+  "NE": [
+    "news1",
+    "news2"
+  ],
+  "South": [
+    "news3"
+  ]
+}
