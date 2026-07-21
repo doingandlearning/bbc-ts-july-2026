@@ -5,8 +5,10 @@ const colors: Record<string, string> = {
   purple: "#800080",
 };
 
+type Blue = "#0000ff" | "#3b82f6";
+
 type Theme = {
-  primary: string;
+  primary: Blue;
   secondary: string;
   success: string;
 };
