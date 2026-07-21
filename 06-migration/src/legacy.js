@@ -1,10 +1,15 @@
+// @ts-check
 const PI = Math.PI;
 
+/**
+ * JSDoc
+ * 
+ * @param {number} radius 
+ * @returns {number}
+ */
 function getCircleArea(radius) {
   return radius * radius * PI;
 }
-
-
 
 function getRectangleArea(length, width) {
   return length * width;
