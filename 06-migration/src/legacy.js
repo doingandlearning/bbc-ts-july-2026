@@ -1,28 +1,27 @@
 // @ts-check
 const PI = Math.PI;
 
-/**
- * JSDoc
- * 
- * @param {number} radius 
- * @returns {number}
- */
+/** @type {CircleAreaFn} */
 function getCircleArea(radius) {
   return radius * radius * PI;
 }
 
+/** @type {RectangleAreaFn} */
 function getRectangleArea(length, width) {
   return length * width;
 }
 
+/** @type {SquareAreaFn} */
 function getSquareArea(width) {
   return getRectangleArea(width, width);
 }
 
+/** @type {RightTriangleAreaFn} */
 function getRightTriangleArea(base, height) {
   return (base * height) / 2;
 }
 
+/** @type {AreaFn} */
 function getArea(shape) {
   switch (shape.type) {
     case "circle":
@@ -40,19 +39,23 @@ function getArea(shape) {
   }
 }
 
+/** @type {Circle} */
 const circle = { type: "circle", radius: 4 };
 getArea(circle);
 console.log(circle);
 
+/** @type {Rectangle} */
 const rectangle = { type: "rectangle", length: 7, width: 4 };
 
 getArea(rectangle);
 console.log(rectangle);
 
+/** @type {Square} */
 const square = { type: "square", width: 5 };
 getArea(square);
 console.log(square);
 
+/** @type {RightTriangle} */
 const rightTriangle = { type: "rightTriangle", base: 9, height: 4 };
 getArea(rightTriangle);
 console.log(rightTriangle);

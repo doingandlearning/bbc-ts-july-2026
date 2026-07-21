@@ -1,35 +1,34 @@
 // legacy.d.ts
-
-interface Circle {
+type Circle = {
   type: "circle";
   radius: number;
   area?: number;
-}
+};
 
-interface Rectangle {
+type Rectangle = {
   type: "rectangle";
   length: number;
   width: number;
   area?: number;
-}
+};
 
-interface Square {
-  type: "square";
-  width: number;
-  area?: number;
-}
-
-interface RightTriangle {
+type RightTriangle = {
   type: "rightTriangle";
   base: number;
-  height: number;
   area?: number;
-}
+  height: number;
+};
+
+type Square = {
+  type: "square";
+  area?: number;
+  width: number;
+};
 
 type Shape = Circle | Rectangle | Square | RightTriangle;
 
-declare function getCircleArea(radius: number): number;
-declare function getRectangleArea(length: number, width: number): number;
-declare function getSquareArea(width: number): number;
-declare function getRightTriangleArea(base: number, height: number): number;
-declare function getArea(shape: Shape): void;
+type CircleAreaFn = (radius: number) => number;
+type RectangleAreaFn = (length: number, width: number) => number;
+type SquareAreaFn = (width: number) => number;
+type RightTriangleAreaFn = (base: number, height: number) => number;
+type AreaFn = (shape: Shape) => void;
