@@ -51,6 +51,7 @@ function simulateDom() {
     button3: { click: () => "" },
   };
   for (let i = 1; i <= 3; i++) {
+    // @ts-expect-error
     const element = pseudoDom[`button${i}`];
     element.click = function () {
       return `Item ${i} is clicked.`; // Item {3,3,3/nothing/1,2,3/2,2,2} is clicked
