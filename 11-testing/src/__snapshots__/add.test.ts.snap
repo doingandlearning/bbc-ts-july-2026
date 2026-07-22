@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`throws an error if non-numbers are added 2`] = `[TypeError: Each argument should be a number.]`;

@@ -18,8 +18,6 @@ const data: Partial<GithubUser> = {};
 data.name = "Bob";
 data.location = "Brighton";
 
-const fullData: Required<typeof data> = data;
-
 type PartialUser = Omit<GithubUser, "followers">;
 
 type SuppliedRegions =

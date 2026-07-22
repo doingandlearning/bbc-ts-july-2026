@@ -60,10 +60,13 @@ function askB(): Option<string> {
   }
   return new Some(result);
 }
+function isValidDate(date: Date): date is Date {
+  return date instanceof Date && date.toString() !== "Invalid Date";
+}
 
 function parseB(birthday: string): Option<Date> {
   let date = new Date(birthday);
-  if (!isValid(date)) {
+  if (!isValidDate(date)) {
     return new None();
   }
   return new Some(date);
